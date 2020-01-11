@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import lifter from '../lifter.jpg';
+import lifter from '../lifter.png';
 // import NavBar from './NavBar';
 
 
@@ -12,7 +12,7 @@ class Header extends React.Component {
             <img src={lifter} className="App-logo" alt="logo" />
           </div>
           <div className="row">
-            <h2>Welcome to the boxWOD!</h2>
+            <h2>Welcome to BoxWOD!</h2>
           </div>
         </div>
     )
