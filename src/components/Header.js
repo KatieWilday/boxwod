@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import lifter from '../lifter.png';
-// import NavBar from './NavBar';
+import NavBar from './NavBar';
 
 
 class Header extends React.Component {
@@ -14,6 +14,7 @@ class Header extends React.Component {
           <div className="row">
             <h2>Welcome to BoxWOD!</h2>
           </div>
+          <NavBar className=""/>
         </div>
     )
   }
