@@ -5,7 +5,6 @@ import TodaysDate from './TodaysDate'
 import CurrentWorkout from './CurrentWorkout'
 import LogIn from './LogIn'
 import axios from "axios"
-import Registration from "./Registration"
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -39,13 +38,6 @@ export default class Home extends React.Component {
             <h2><TodaysDate /></h2>
             <h2><CurrentWorkout /></h2>
             <Link to = '/next_wod' className = 'next-link' activeClassName = 'Active-link'>Next WOD</Link></h3>
-          </div>
-            <h1>Home</h1>
-            <h1>Status: {this.props.loggedInStatus}</h1>
-            <button onClick={() => this.handleLogoutClick()}>Logout</button>
-            <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
-            <LogIn handleSuccessfulAuth={this.handleSuccessfulAuth} />
-          <div>
           </div>
       </div>
     );

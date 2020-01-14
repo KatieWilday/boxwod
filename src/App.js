@@ -11,6 +11,7 @@ import CurrentWorkout from './components/CurrentWorkout'
 import Whiteboard from './components/Whiteboard'
 import PerformanceHistory from './components/PerformanceHistory'
 import LogIn from './components/LogIn'
+import Footer from './components/Footer'
 
 function App() {
   const memberComponents = membersData.map(member => <Member key={member.id} memberFirstName={member.memberFirstName} backSquat={member.backSquat}/>)
@@ -25,6 +26,7 @@ function App() {
         <Route path="/whiteboard" component={Whiteboard} />
         <Route path="/performancehistory" component={PerformanceHistory} />
         <Route path="/login" component={LogIn} />
+        <Footer />
       </div>
     </Router>
 
