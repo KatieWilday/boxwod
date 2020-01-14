@@ -25,14 +25,14 @@ class Header extends React.Component {
     }
 
     return (
-        <div className="container-fluid App-header">
+        <div className="App-header">
           <div className="row">
             <img src={lifter} className="App-logo" alt="logo" />
           </div>
           <div className="row">
             <header className="navbar" style={styles}>Good {` ${timeOfDay},`} Current User!</header>
           </div>
-          <NavBar className=""/>
+          <NavBar className="navbar"/>
         </div>
     )
   }

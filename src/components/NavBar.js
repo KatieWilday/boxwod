@@ -7,7 +7,8 @@ class NavBar extends React.Component {
     return (
       <div className = 'Nav-wrapper'>
           <div className = 'Nav-links-wrapper'>
-              <Link to = '/' className = 'Nav-link' activeClassName = 'Active-link'>Home</Link>
+              <Link to = '/' className = 'Nav-link' activeClassName = 'Active-link'> Home </Link>
+              <Link to ='/addResults' className='Nav-link'> Add Results </Link>
           </div>
       </div>
     )

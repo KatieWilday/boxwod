@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Header from './components/Header'
 import membersData from './membersData'
 import Member from './components/Member'
+import Results from './components/Results'
 
 function App() {
   const memberComponents = membersData.map(member => <Member key={member.id} memberFirstName={member.memberFirstName} backSquat={member.backSquat}/>)
@@ -14,9 +15,8 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        {memberComponents}
         <Route exact path="/" component={Home} />
-
+        <Route path="/addResults" component={Results} />
       </div>
     </Router>
 
