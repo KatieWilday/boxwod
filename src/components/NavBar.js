@@ -10,11 +10,11 @@ class NavBar extends Component {
     return (
       <div className="menu-links">
         <button> <Link to = '/login'>Log In</Link></button>
-        <button> <Link to = '/classschedule'>Class Schedule</Link><button>
         <button> <Link to = '/'>Today's WOD</Link></button>
+        <button> <Link to = '/classschedule'>Class Schedule</Link></button>
         <button> <Link to = '/addresults'>Add Results</Link></button>
         <button> <Link to = '/whiteboard'>Whiteboard</Link></button>
-        <button> <Link to = '/perfomancehistory'>Performance History</Link></button>
+        <button> <Link to = '/performancehistory'>Performance History</Link></button>
         <button> <Link to = '/settings'>Settings</Link></button>
       </div>
     );
