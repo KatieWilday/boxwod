@@ -24,6 +24,11 @@
   color: white;
 }
 
+.menu-links {
+  color: lightBlue;
+  font-size: 14;
+}
+
 .Nav-link {
   color: white;
 }
@@ -47,5 +52,5 @@
 }
 
 .whiteboard {
-color: white;
+  color: white;
 }

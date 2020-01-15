@@ -9,13 +9,13 @@ class NavBar extends Component {
   render() {
     return (
       <div className="menu-links">
-        <button> <Link to = '/login'>Log In</Link></button>
-        <button> <Link to = '/'>Today's WOD</Link></button>
-        <button> <Link to = '/classschedule'>Class Schedule</Link></button>
-        <button> <Link to = '/addresults'>Add Results</Link></button>
-        <button> <Link to = '/whiteboard'>Whiteboard</Link></button>
-        <button> <Link to = '/performancehistory'>Performance History</Link></button>
-        <button> <Link to = '/settings'>Settings</Link></button>
+        <Link to = '/login' className="menu-links">Log In</Link>
+        <Link to = '/' className="menu-links">Today's WOD</Link>
+        <Link to = '/classschedule' className="menu-links">Class Schedule</Link>
+        <Link to = '/addresults' className="menu-links">Add Results</Link>
+        <Link to = '/whiteboard' className="menu-links">Whiteboard</Link>
+        <Link to = '/performancehistory' className="menu-links">Performance History</Link>
+        <Link to = '/settings' className="menu-links">Settings</Link>
       </div>
     );
   }
