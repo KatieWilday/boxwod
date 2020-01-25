@@ -1,13 +1,12 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
-import TodaysDate from './TodaysDate'
-import CurrentWorkout from './CurrentWorkout'
+//import NavBar from './NavBar'
 import LogIn from './LogIn'
 import axios from "axios"
 import SignUp from './SignUp'
+import axios from "axios";
 
-export default class Home extends React.Component {
+export default class Home extends Component {
   constructor(props) {
     super(props);
 
@@ -31,15 +30,14 @@ export default class Home extends React.Component {
       });
   }
 
-  render (){
+  render() {
     return (
-      <div class='Hcontainer-fluid App-header'>
-          <div class='App-header'>
-            <h3><Link to = '/previous_wod' className = 'previous-link' activeClassName = 'Active-link'>Previous WOD</Link>
-            <h2><TodaysDate /></h2>
-            <h2><CurrentWorkout /></h2>
-            <Link to = '/next_wod' className = 'next-link' activeClassName = 'Active-link'>Next WOD</Link></h3>
-          </div>
+      <div>
+        <h1>Home</h1>
+        <h1>Status: {this.props.loggedInStatus}</h1>
+        <button onClick={() => this.handleLogoutClick()}>Logout</button>
+        <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
+        <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
       </div>
     );
   }
