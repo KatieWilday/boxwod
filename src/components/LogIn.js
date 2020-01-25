@@ -68,7 +68,7 @@ export default class LogIn extends Component {
             required
           />
 
-          <button type="submit">Login</button>
+          <button type="submit">Log In</button>
         </form>
       </div>
     );
