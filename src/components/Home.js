@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import LogIn from './LogIn'
 import axios from "axios"
 import SignUp from './SignUp'
-import axios from "axios";
 
 export default class Home extends Component {
   constructor(props) {
@@ -36,8 +35,8 @@ export default class Home extends Component {
         <h1>Home</h1>
         <h1>Status: {this.props.loggedInStatus}</h1>
         <button onClick={() => this.handleLogoutClick()}>Logout</button>
-        <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
-        <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
+        <SignUp handleSuccessfulAuth={this.handleSuccessfulAuth} />
+        <LogIn handleSuccessfulAuth={this.handleSuccessfulAuth} />
       </div>
     );
   }
