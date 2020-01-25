@@ -5,6 +5,7 @@ import TodaysDate from './TodaysDate'
 import CurrentWorkout from './CurrentWorkout'
 import LogIn from './LogIn'
 import axios from "axios"
+import SignUp from './SignUp'
 
 export default class Home extends React.Component {
   constructor(props) {
